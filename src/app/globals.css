@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Drop Lab is a dark-only dashboard. */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #09090b; /* zinc-950 */
+  color: #e4e4e7; /* zinc-200 */
+}
+
+/* Briefly highlight an evidence row when you jump to it from an evidence link. */
+:target {
+  scroll-margin-top: 6rem;
+  animation: evidence-flash 1.6s ease-out;
+}
+
+@keyframes evidence-flash {
+  from {
+    background-color: rgb(16 185 129 / 0.25);
+  }
+  to {
+    background-color: transparent;
+  }
+}
